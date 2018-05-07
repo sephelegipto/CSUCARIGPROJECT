@@ -1,90 +1,62 @@
-
 <template>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-
-				<div class="card" v-if="lists.nopermission">
-
-					<div class="header">
-						<h1 v-if="lists.nopermission">{{ lists.nopermission }}</h1>
+  	<div id="app">
+		      <div class="card">
+                            <div class="content">
+                                <div class="row">                            
+                                    <div class="col-xs-7">
+                                        <div class="numbers">
+                                           	  <h6>Courses</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+	
+						<v-app id="inspire">
+							<v-data-table
+							:headers="headers"
+							:items="lists"
 						
+							>
+							
+							<template slot="items" slot-scope="props">
+								<td class="text-xs-left">{{ props.item.CourseCode }}</td>
+								<td class="text-xs-left">{{ props.item.CourseTitle }}</td>
+								<td class="text-xs-left">{{ props.item.MajorCode }}</td>
+								<td class="text-xs-left">{{ props.item.MajorDescription }}</td>
+								<td class="text-xs-left">{{ props.item.CollegeCode }}</td>
+								<td class="text-xs-left">{{ props.item.CollegeDescription }}</td>													
+							</template>
+							<template slot="pageText" slot-scope="props">
+								Showing {{ props.pageStart }} - {{ props.pageStop }} of {{ props.itemsLength }}
+							</template>
+							</v-data-table>
+						</v-app>
 					</div>
-				</div>
-				<div class="card" v-if="!lists.nopermission">
-
-					<div class="header">
-						<h4 class="title">College</h4>
-
-					</div>
-
-					<div class="content table-responsive table-full-width">
-
-						<table class="table is-hoverable">
-							<thead>
-								<tr>
-									<th>Action</th>
-
-
-									<th>Course Code</th>
-									<th>Course Title</th>
-									<th>Major Description </th>
-									<th>College Code</th>
-									<th>College Description</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr v-for="item,key in lists">
-									<td>  
-
-										<a>
-											<span>
-												<i class="has-text-info fa fa-edit" aria-hidden="true" @click="openUpdate(key)"></i>
-											</span>
-											<span>
-												<i class="has-text-danger fa fa-trash" aria-hidden="true" @click="del(key,item.course_id)"></i>
-											</span>
-										</a>
-									</td>
-
-									<td @click="openUpdate(key)">{{ item.CourseCode }}</td>
-									<td @click="openUpdate(key)">{{ item.CourseTitle }}</td>
-									<td @click="openUpdate(key)">{{ item.MajorDescription }}</td>
-									<td @click="openUpdate(key)">{{ item.CollegeCode }}</td>
-									<td @click="openUpdate(key)">{{ item.CollegeDescription }}</td>
-
-
-								</tr>
-
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-
-
-
-		</div>
-	</div>
-
 </template>
 <script>
+export default {
+  data() {
+    return {
+      headers: [
+        { text: "Course Code", value: "CourseCode" },
+        { text: "Course Title", value: "CourseTitle" },
+        { text: "Major Code", value: "MajorCode" },
+        { text: "Major Description", value: "MajorDescription" },
+        { text: "College Code", value: "CollegeCode" },
+        { text: "College Description", value: "CollegeDescription" }
+      ],
+      lists: []
+    };
+  },
 
-export default{
-
-	data(){
-		return{
-			lists:{}
-		}
-	},
-
-	mounted(){
-		axios.get('/course')
-		.then((response)=>  this.lists = response.data)
-		.catch((error) => this.errors = error.response.data.errors)
-
-	}
-}
+  mounted() {
+    axios
+      .get("/course")
+      .then(response => (this.lists = response.data))
+      .catch(error => (this.errors = error.response.data.errors));
+  }
+};
 </script>
-</template>
