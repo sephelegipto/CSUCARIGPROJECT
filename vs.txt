@@ -1,0 +1,14 @@
+{
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": false,
+    "editor.fontSize": 15,
+    "editor.lineHeight": 35,
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "emmet.triggerExpansionOnTab": true,
+    "blade.format.enable": true,
+    "emmet.includeLanguages": {
+        "blade": "html"
+    },
+    "editor.formatOnSave": true,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+}

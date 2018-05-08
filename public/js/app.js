@@ -12042,7 +12042,7 @@ module.exports = Vue;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(12);
-module.exports = __webpack_require__(84);
+module.exports = __webpack_require__(85);
 
 
 /***/ }),
@@ -12054,7 +12054,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vuetify__);
 __webpack_require__(13);
 
@@ -12069,30 +12069,30 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 //#######################################################################
 //############################ S I D E B A R ############################
-var facultysidebar = __webpack_require__(40);
-var adminsidebar = __webpack_require__(42);
-var facultyprofile = __webpack_require__(44);
+var facultysidebar = __webpack_require__(41);
+var adminsidebar = __webpack_require__(43);
+var facultyprofile = __webpack_require__(45);
 
 //#######################################################################
 //############################### P D S #################################
-var personaldatasheet = __webpack_require__(46);
-var cseligibility = __webpack_require__(48);
-var educationalbackground = __webpack_require__(50);
-var familybackground = __webpack_require__(52);
-var learninganddevelopment = __webpack_require__(54);
-var otherinformation = __webpack_require__(56);
-var otherquestion = __webpack_require__(58);
-var reference = __webpack_require__(60);
-var voluntarilywork = __webpack_require__(62);
-var workexperience = __webpack_require__(64);
+var personaldatasheet = __webpack_require__(47);
+var cseligibility = __webpack_require__(49);
+var educationalbackground = __webpack_require__(51);
+var familybackground = __webpack_require__(53);
+var learninganddevelopment = __webpack_require__(55);
+var otherinformation = __webpack_require__(57);
+var otherquestion = __webpack_require__(59);
+var reference = __webpack_require__(61);
+var voluntarilywork = __webpack_require__(63);
+var workexperience = __webpack_require__(65);
 //#######################################################################
 //############################A D M I N #################################
-var studentsadmin = __webpack_require__(66);
-var buildingsadmin = __webpack_require__(69);
-var collegesadmin = __webpack_require__(72);
-var coursesadmin = __webpack_require__(75);
-var curriculumsadmin = __webpack_require__(78);
-var employeesadmin = __webpack_require__(81);
+var studentsadmin = __webpack_require__(67);
+var buildingsadmin = __webpack_require__(70);
+var collegesadmin = __webpack_require__(73);
+var coursesadmin = __webpack_require__(76);
+var curriculumsadmin = __webpack_require__(79);
+var employeesadmin = __webpack_require__(82);
 
 //#######################################################################
 //########################## R O U T E S ################################
@@ -45916,4293 +45916,6 @@ if (inBrowser && window.Vue) {
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(41)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Sidebar\\faculty.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2fc9e486", Component.options)
-  } else {
-    hotAPI.reload("data-v-2fc9e486", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "sidebar-wrapper" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("ul", { staticClass: "nav" }, [
-      _c(
-        "li",
-        { attrs: { id: "employee" } },
-        [
-          _c("router-link", { attrs: { to: "/facultyprofile" } }, [
-            _c("i", { staticClass: "ti-user" }),
-            _vm._v(" "),
-            _c("p", [_vm._v("Profile")])
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        { attrs: { id: "employee" } },
-        [
-          _c("router-link", { attrs: { to: "/personaldatasheet" } }, [
-            _c("i", { staticClass: "ti-user" }),
-            _vm._v(" "),
-            _c("p", [_vm._v("Personal Data Sheet")])
-          ])
-        ],
-        1
-      )
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo" }, [
-      _c("a", { staticClass: "simple-text", attrs: { href: "#" } }, [
-        _c("img", { attrs: { src: "images/csu.png", alt: "" } })
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2fc9e486", module.exports)
-  }
-}
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(43)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Sidebar\\adminsidebar.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-555dd324", Component.options)
-  } else {
-    hotAPI.reload("data-v-555dd324", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "sidebar-wrapper" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("ul", { staticClass: "nav" }, [
-      _c(
-        "li",
-        { attrs: { id: "employee" } },
-        [
-          _c("router-link", { attrs: { to: "/studentsadmin" } }, [
-            _c("i", { staticClass: "ti-user" }),
-            _vm._v(" "),
-            _c("p", [_vm._v("Students")])
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        { attrs: { id: "employee" } },
-        [
-          _c("router-link", { attrs: { to: "/employeesadmin" } }, [
-            _c("i", { staticClass: "ti-user" }),
-            _vm._v(" "),
-            _c("p", [_vm._v("Employees")])
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        { attrs: { id: "employee" } },
-        [
-          _c("router-link", { attrs: { to: "/collegesadmin" } }, [
-            _c("i", { staticClass: "ti-user" }),
-            _vm._v(" "),
-            _c("p", [_vm._v("Colleges")])
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        { attrs: { id: "employee" } },
-        [
-          _c("router-link", { attrs: { to: "/buildingsadmin" } }, [
-            _c("i", { staticClass: "ti-user" }),
-            _vm._v(" "),
-            _c("p", [_vm._v("Buildings")])
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        { attrs: { id: "employee" } },
-        [
-          _c("router-link", { attrs: { to: "/coursesadmin" } }, [
-            _c("i", { staticClass: "ti-user" }),
-            _vm._v(" "),
-            _c("p", [_vm._v("Courses")])
-          ])
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "li",
-        { attrs: { id: "employee" } },
-        [
-          _c("router-link", { attrs: { to: "/curriculumsadmin" } }, [
-            _c("i", { staticClass: "ti-user" }),
-            _vm._v(" "),
-            _c("p", [_vm._v("Curriculums")])
-          ])
-        ],
-        1
-      )
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo" }, [
-      _c("a", { staticClass: "simple-text", attrs: { href: "#" } }, [
-        _c("img", { attrs: { src: "images/csu.png", alt: "" } })
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-555dd324", module.exports)
-  }
-}
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(45)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\profile.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1f56158a", Component.options)
-  } else {
-    hotAPI.reload("data-v-1f56158a", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-lg-4 col-md-5" }, [
-          _c("div", { staticClass: "card card-user" }, [
-            _c("div", { staticClass: "image" }, [
-              _c("img", {
-                attrs: { src: "assets/img/background.jpg", alt: "..." }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "content" }, [
-              _c("div", { staticClass: "author" }, [
-                _c("img", {
-                  staticClass: "avatar border-white",
-                  attrs: { src: "assets/img/faces/face-2.jpg", alt: "..." }
-                }),
-                _vm._v(" "),
-                _c("h4", { staticClass: "title" }, [
-                  _vm._v("Chet Faker"),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("small", [_vm._v("@chetfaker")])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "description text-center" }, [
-                _vm._v('\n\t\t\t\t\t\t"I like the way you work it '),
-                _c("br"),
-                _vm._v("\n\t\t\t\t\t\tNo diggity "),
-                _c("br"),
-                _vm._v('\n\t\t\t\t\t\tI wanna bag it up"\n\t\t\t\t\t')
-              ])
-            ]),
-            _vm._v(" "),
-            _c("hr"),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-center" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-md-3 col-md-offset-1" }, [
-                  _c("h5", [
-                    _vm._v("12"),
-                    _c("br"),
-                    _c("small", [_vm._v("Files")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4" }, [
-                  _c("h5", [
-                    _vm._v("2GB"),
-                    _c("br"),
-                    _c("small", [_vm._v("Used")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-3" }, [
-                  _c("h5", [
-                    _vm._v("24,6$"),
-                    _c("br"),
-                    _c("small", [_vm._v("Spent")])
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "header" }, [
-              _c("h4", { staticClass: "title" }, [_vm._v("Team Members")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "content" }, [
-              _c("ul", { staticClass: "list-unstyled team-members" }, [
-                _c("li", [
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-xs-3" }, [
-                      _c("div", { staticClass: "avatar" }, [
-                        _c("img", {
-                          staticClass:
-                            "img-circle img-no-padding img-responsive",
-                          attrs: {
-                            src: "assets/img/faces/face-0.jpg",
-                            alt: "Circle Image"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-xs-6" }, [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\t\tDJ Khaled\n\t\t\t\t\t\t\t\t\t"
-                      ),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _c("small", [_vm._v("Offline")])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-xs-3 text-right" })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-xs-3" }, [
-                      _c("div", { staticClass: "avatar" }, [
-                        _c("img", {
-                          staticClass:
-                            "img-circle img-no-padding img-responsive",
-                          attrs: {
-                            src: "assets/img/faces/face-1.jpg",
-                            alt: "Circle Image"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-xs-6" }, [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\t\tCreative Tim\n\t\t\t\t\t\t\t\t\t"
-                      ),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "text-success" }, [
-                        _c("small", [_vm._v("Available")])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-xs-3 text-right" })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-xs-3" }, [
-                      _c("div", { staticClass: "avatar" }, [
-                        _c("img", {
-                          staticClass:
-                            "img-circle img-no-padding img-responsive",
-                          attrs: {
-                            src: "assets/img/faces/face-3.jpg",
-                            alt: "Circle Image"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-xs-6" }, [
-                      _vm._v("\n\t\t\t\t\t\t\t\t\tFlume\n\t\t\t\t\t\t\t\t\t"),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "text-danger" }, [
-                        _c("small", [_vm._v("Busy")])
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-lg-8 col-md-7" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "header" }, [
-              _c("h4", { staticClass: "title" }, [_vm._v("Edit Profile")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "content" }, [
-              _c("form", [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-5" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Company")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control border-input",
-                        attrs: {
-                          type: "text",
-                          disabled: "",
-                          placeholder: "Company",
-                          value: "Creative Code Inc."
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-3" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Username")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control border-input",
-                        attrs: {
-                          type: "text",
-                          placeholder: "Username",
-                          value: "michael23"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-4" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "exampleInputEmail1" } }, [
-                        _vm._v("Email address")
-                      ]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control border-input",
-                        attrs: { type: "email", placeholder: "Email" }
-                      })
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-6" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("First Name")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control border-input",
-                        attrs: {
-                          type: "text",
-                          placeholder: "First Name",
-                          value: "Chet"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-6" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Last Name")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control border-input",
-                        attrs: {
-                          type: "text",
-                          placeholder: "Last Name",
-                          value: "Faker"
-                        }
-                      })
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Address")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control border-input",
-                        attrs: {
-                          type: "text",
-                          placeholder: "Home Address",
-                          value: "Melbourne, Australia"
-                        }
-                      })
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-4" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("City")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control border-input",
-                        attrs: {
-                          type: "text",
-                          placeholder: "City",
-                          value: "Melbourne"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-4" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Country")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control border-input",
-                        attrs: {
-                          type: "text",
-                          placeholder: "Country",
-                          value: "Australia"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-4" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("Postal Code")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control border-input",
-                        attrs: { type: "number", placeholder: "ZIP Code" }
-                      })
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", [_vm._v("About Me")]),
-                      _vm._v(" "),
-                      _c(
-                        "textarea",
-                        {
-                          staticClass: "form-control border-input",
-                          attrs: {
-                            rows: "5",
-                            placeholder: "Here can be your description",
-                            value: "Mike"
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "Oh so, your weak rhyme\n\t\t\t\t\t\t\t\t\t\tYou doubt I'll bother, reading into it\n\t\t\t\t\t\t\t\t\t\tI'll probably won't, left to my own devices\n\t\t\t\t\t\t\t\t\tBut that's the difference in our opinions."
-                          )
-                        ]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "clearfix" })
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1f56158a", module.exports)
-  }
-}
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(47)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\personaldatasheet.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-50634856", Component.options)
-  } else {
-    hotAPI.reload("data-v-50634856", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _vm._m(1)
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content" })
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-50634856", module.exports)
-  }
-}
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(49)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\cseligibility.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-87bf63be", Component.options)
-  } else {
-    hotAPI.reload("data-v-87bf63be", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "card md-form" }, [
-            _c(
-              "div",
-              { staticClass: "tab-content" },
-              [
-                _c("router-view", {
-                  staticClass: "view two",
-                  attrs: { name: "pds", "keep-alive": "" }
-                })
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-87bf63be", module.exports)
-  }
-}
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(51)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\educationalbackground.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-219c5245", Component.options)
-  } else {
-    hotAPI.reload("data-v-219c5245", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "card md-form" }, [
-            _c(
-              "div",
-              { staticClass: "tab-content" },
-              [
-                _c("router-view", {
-                  staticClass: "view two",
-                  attrs: { name: "pds", "keep-alive": "" }
-                })
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-219c5245", module.exports)
-  }
-}
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(53)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\familybackground.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7ba664be", Component.options)
-  } else {
-    hotAPI.reload("data-v-7ba664be", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "card md-form" }, [
-            _c(
-              "div",
-              { staticClass: "tab-content" },
-              [
-                _c("router-view", {
-                  staticClass: "view two",
-                  attrs: { name: "pds", "keep-alive": "" }
-                })
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7ba664be", module.exports)
-  }
-}
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(55)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\learninganddevelopment.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-19d527ce", Component.options)
-  } else {
-    hotAPI.reload("data-v-19d527ce", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "card md-form" }, [
-            _c(
-              "div",
-              { staticClass: "tab-content" },
-              [
-                _c("router-view", {
-                  staticClass: "view two",
-                  attrs: { name: "pds", "keep-alive": "" }
-                })
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-19d527ce", module.exports)
-  }
-}
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(57)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\otherinformation.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d8798f70", Component.options)
-  } else {
-    hotAPI.reload("data-v-d8798f70", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "card md-form" }, [
-            _c(
-              "div",
-              { staticClass: "tab-content" },
-              [
-                _c("router-view", {
-                  staticClass: "view two",
-                  attrs: { name: "pds", "keep-alive": "" }
-                })
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-d8798f70", module.exports)
-  }
-}
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(59)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\otherquestion.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6445990c", Component.options)
-  } else {
-    hotAPI.reload("data-v-6445990c", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "card md-form" }, [
-            _c(
-              "div",
-              { staticClass: "tab-content" },
-              [
-                _c("router-view", {
-                  staticClass: "view two",
-                  attrs: { name: "pds", "keep-alive": "" }
-                })
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6445990c", module.exports)
-  }
-}
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(61)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\reference.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-658ceb4f", Component.options)
-  } else {
-    hotAPI.reload("data-v-658ceb4f", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "card md-form" }, [
-            _c(
-              "div",
-              { staticClass: "tab-content" },
-              [
-                _c("router-view", {
-                  staticClass: "view two",
-                  attrs: { name: "pds", "keep-alive": "" }
-                })
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-658ceb4f", module.exports)
-  }
-}
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(63)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\voluntarilywork.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-af9bec9c", Component.options)
-  } else {
-    hotAPI.reload("data-v-af9bec9c", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "card md-form" }, [
-            _c(
-              "div",
-              { staticClass: "tab-content" },
-              [
-                _c("router-view", {
-                  staticClass: "view two",
-                  attrs: { name: "pds", "keep-alive": "" }
-                })
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-af9bec9c", module.exports)
-  }
-}
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(65)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\workexperience.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1933b8e7", Component.options)
-  } else {
-    hotAPI.reload("data-v-1933b8e7", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid " }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-12" }, [
-        _c("div", { staticClass: "card md-form" }, [
-          _c("div", { staticClass: "tab-content " }, [
-            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/familybackground" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/educationalbackground" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "active" },
-                [
-                  _c("router-link", { attrs: { to: "/workexperience" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c(
-                    "router-link",
-                    { attrs: { to: "/learninganddevelopment" } },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
-                      )
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
-                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                [
-                  _c("router-link", { attrs: { to: "/reference" } }, [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
-                    )
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0)
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("div", { staticClass: "card md-form" }, [
-            _c(
-              "div",
-              { staticClass: "tab-content" },
-              [
-                _c("router-view", {
-                  staticClass: "view two",
-                  attrs: { name: "pds", "keep-alive": "" }
-                })
-              ],
-              1
-            )
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
-        _vm._v("Export")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1933b8e7", module.exports)
-  }
-}
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(67)
-/* template */
-var __vue_template__ = __webpack_require__(68)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Admin\\students.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-21c1af88", Component.options)
-  } else {
-    hotAPI.reload("data-v-21c1af88", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 67 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-	data: function data() {
-		return {
-			lists: {}
-		};
-	},
-	mounted: function mounted() {
-		var _this = this;
-
-		axios.get('/student').then(function (response) {
-			return _this.lists = response.data;
-		}).catch(function (error) {
-			return _this.errors = error.response.data.errors;
-		});
-	}
-});
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid" }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-10" }, [
-        _vm.lists.nopermission
-          ? _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "header" }, [
-                _vm.lists.nopermission
-                  ? _c("h1", [_vm._v(_vm._s(_vm.lists.nopermission))])
-                  : _vm._e()
-              ])
-            ])
-          : _vm._e(),
-        _vm._v(" "),
-        !_vm.lists.nopermission
-          ? _c("div", { staticClass: "card" }, [
-              _vm._m(0),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "content table-responsive table-full-width" },
-                [
-                  _c("table", { staticClass: "table is-hoverable" }, [
-                    _vm._m(1),
-                    _vm._v(" "),
-                    _c(
-                      "tbody",
-                      _vm._l(_vm.lists, function(item, key) {
-                        return _c("tr", [
-                          _c("td", [
-                            _c("a", [
-                              _c("span", [
-                                _c("i", {
-                                  staticClass: "has-text-info fa fa-edit",
-                                  attrs: { "aria-hidden": "true" },
-                                  on: {
-                                    click: function($event) {
-                                      _vm.openUpdate(key)
-                                    }
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("span", [
-                                _c("i", {
-                                  staticClass: "has-text-danger fa fa-trash",
-                                  attrs: { "aria-hidden": "true" },
-                                  on: {
-                                    click: function($event) {
-                                      _vm.del(key, item.course_id)
-                                    }
-                                  }
-                                })
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "td",
-                            {
-                              on: {
-                                click: function($event) {
-                                  _vm.openUpdate(key)
-                                }
-                              }
-                            },
-                            [_vm._v(_vm._s(item.StudentID))]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "td",
-                            {
-                              on: {
-                                click: function($event) {
-                                  _vm.openUpdate(key)
-                                }
-                              }
-                            },
-                            [_vm._v(_vm._s(item.CurriculumCode))]
-                          )
-                        ])
-                      })
-                    )
-                  ])
-                ]
-              )
-            ])
-          : _vm._e()
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header" }, [
-      _c("h4", { staticClass: "title" }, [_vm._v("Students")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("Action")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("StudentID")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Course")])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-21c1af88", module.exports)
-  }
-}
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(70)
-/* template */
-var __vue_template__ = __webpack_require__(71)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Admin\\buildings.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-390df66a", Component.options)
-  } else {
-    hotAPI.reload("data-v-390df66a", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 70 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      headers: [{ text: "Building Code", value: "BuildingCode" }, { text: "Building Title", value: "BuildingDescription" }],
-      lists: []
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get("/building").then(function (response) {
-      return _this.lists = response.data;
-    }).catch(function (error) {
-      return _this.errors = error.response.data.errors;
-    });
-  }
-});
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { attrs: { id: "app" } },
-    [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "v-app",
-        { attrs: { id: "inspire" } },
-        [
-          _c("v-data-table", {
-            attrs: { headers: _vm.headers, items: _vm.lists },
-            scopedSlots: _vm._u([
-              {
-                key: "items",
-                fn: function(props) {
-                  return [
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.BuildingCode))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.BuildingDescription))
-                    ])
-                  ]
-                }
-              }
-            ])
-          })
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "content" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-7" }, [
-            _c("div", { staticClass: "numbers" }, [
-              _c("h6", [_vm._v("Buildings")])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-390df66a", module.exports)
-  }
-}
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(73)
-/* template */
-var __vue_template__ = __webpack_require__(74)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Admin\\colleges.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0b378260", Component.options)
-  } else {
-    hotAPI.reload("data-v-0b378260", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 73 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      headers: [{ text: "College Code", value: "CollegeCode" }, { text: "College Description", value: "FirstName" }, { text: "College Head", value: "PositionDescription" }],
-      lists: []
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get("/college").then(function (response) {
-      return _this.lists = response.data;
-    }).catch(function (error) {
-      return _this.errors = error.response.data.errors;
-    });
-  }
-});
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { attrs: { id: "app" } },
-    [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "v-app",
-        { attrs: { id: "inspire" } },
-        [
-          _c("v-data-table", {
-            attrs: { headers: _vm.headers, items: _vm.lists },
-            scopedSlots: _vm._u([
-              {
-                key: "items",
-                fn: function(props) {
-                  return [
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CollegeCode))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CollegeDescription))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CollegeHead))
-                    ])
-                  ]
-                }
-              },
-              {
-                key: "pageText",
-                fn: function(props) {
-                  return [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tShowing " +
-                        _vm._s(props.pageStart) +
-                        " - " +
-                        _vm._s(props.pageStop) +
-                        " of " +
-                        _vm._s(props.itemsLength) +
-                        "\n\t\t\t\t\t\t\t"
-                    )
-                  ]
-                }
-              }
-            ])
-          })
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "content" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-7" }, [
-            _c("div", { staticClass: "numbers" }, [
-              _c("h6", [_vm._v("Colleges")])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0b378260", module.exports)
-  }
-}
-
-/***/ }),
-/* 75 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(76)
-/* template */
-var __vue_template__ = __webpack_require__(77)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Admin\\courses.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-beb36678", Component.options)
-  } else {
-    hotAPI.reload("data-v-beb36678", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 76 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      headers: [{ text: "Course Code", value: "CourseCode" }, { text: "Course Title", value: "CourseTitle" }, { text: "Major Code", value: "MajorCode" }, { text: "Major Description", value: "MajorDescription" }, { text: "College Code", value: "CollegeCode" }, { text: "College Description", value: "CollegeDescription" }],
-      lists: []
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get("/course").then(function (response) {
-      return _this.lists = response.data;
-    }).catch(function (error) {
-      return _this.errors = error.response.data.errors;
-    });
-  }
-});
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { attrs: { id: "app" } },
-    [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "v-app",
-        { attrs: { id: "inspire" } },
-        [
-          _c("v-data-table", {
-            attrs: { headers: _vm.headers, items: _vm.lists },
-            scopedSlots: _vm._u([
-              {
-                key: "items",
-                fn: function(props) {
-                  return [
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CourseCode))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CourseTitle))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.MajorCode))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.MajorDescription))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CollegeCode))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CollegeDescription))
-                    ])
-                  ]
-                }
-              },
-              {
-                key: "pageText",
-                fn: function(props) {
-                  return [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tShowing " +
-                        _vm._s(props.pageStart) +
-                        " - " +
-                        _vm._s(props.pageStop) +
-                        " of " +
-                        _vm._s(props.itemsLength) +
-                        "\n\t\t\t\t\t\t\t"
-                    )
-                  ]
-                }
-              }
-            ])
-          })
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "content" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-7" }, [
-            _c("div", { staticClass: "numbers" }, [
-              _c("h6", [_vm._v("Courses")])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-beb36678", module.exports)
-  }
-}
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(79)
-/* template */
-var __vue_template__ = __webpack_require__(80)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Admin\\curriculums.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-261a6ab8", Component.options)
-  } else {
-    hotAPI.reload("data-v-261a6ab8", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 79 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      headers: [{ text: "Code", value: "CurriculumCode" }, { text: "Entry Year", value: "EntryYear" }, { text: "Course Title", value: "CourseTitle" }, { text: "College Description", value: "CollegeDescription" }, { text: "Major Description", value: "MajorDescription" }, { text: "Years", value: "NoOfYears" }, { text: "Education Level", value: "EducationLevel" }],
-      lists: []
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get("/curriculum").then(function (response) {
-      return _this.lists = response.data;
-    }).catch(function (error) {
-      return _this.errors = error.response.data.errors;
-    });
-  }
-});
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { attrs: { id: "app" } },
-    [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "v-app",
-        { attrs: { id: "inspire" } },
-        [
-          _c("v-data-table", {
-            attrs: { headers: _vm.headers, items: _vm.lists },
-            scopedSlots: _vm._u([
-              {
-                key: "items",
-                fn: function(props) {
-                  return [
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CurriculumCode))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.EntryYear))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CourseTitle))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.CollegeDescription))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.MajorDescription))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.NoOfYears))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.EducationLevel))
-                    ])
-                  ]
-                }
-              },
-              {
-                key: "pageText",
-                fn: function(props) {
-                  return [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tShowing " +
-                        _vm._s(props.pageStart) +
-                        " - " +
-                        _vm._s(props.pageStop) +
-                        " of " +
-                        _vm._s(props.itemsLength) +
-                        "\n\t\t\t\t\t\t\t"
-                    )
-                  ]
-                }
-              }
-            ])
-          })
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "content" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-7" }, [
-            _c("div", { staticClass: "numbers" }, [
-              _c("h6", [_vm._v("Curriculums")])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-261a6ab8", module.exports)
-  }
-}
-
-/***/ }),
-/* 81 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(82)
-/* template */
-var __vue_template__ = __webpack_require__(83)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\Admin\\employees.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-fd90c5de", Component.options)
-  } else {
-    hotAPI.reload("data-v-fd90c5de", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 82 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      headers: [{ text: "EmployeeID", value: "EmployeeID" }, { text: "Name", value: "FirstName" }, { text: "Position", value: "PositionDescription" }, { text: "Department", value: "DepartmentDescription" }, { text: "Status", value: "Status" }],
-      lists: []
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get("/employee").then(function (response) {
-      return _this.lists = response.data;
-    }).catch(function (error) {
-      return _this.errors = error.response.data.errors;
-    });
-  }
-});
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { attrs: { id: "app" } },
-    [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "v-app",
-        { attrs: { id: "inspire" } },
-        [
-          _c("v-data-table", {
-            attrs: { headers: _vm.headers, items: _vm.lists },
-            scopedSlots: _vm._u([
-              {
-                key: "items",
-                fn: function(props) {
-                  return [
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.EmployeeID))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(
-                        _vm._s(
-                          props.item.Salutation +
-                            " " +
-                            props.item.FirstName +
-                            " " +
-                            props.item.MiddleName +
-                            " " +
-                            props.item.LastName
-                        )
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.PositionDescription))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.DepartmentDescription))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticClass: "text-xs-left" }, [
-                      _vm._v(_vm._s(props.item.Status))
-                    ])
-                  ]
-                }
-              },
-              {
-                key: "pageText",
-                fn: function(props) {
-                  return [
-                    _vm._v(
-                      "\n\t\t\t\t\t\t\t\tShowing " +
-                        _vm._s(props.pageStart) +
-                        " - " +
-                        _vm._s(props.pageStop) +
-                        " of " +
-                        _vm._s(props.itemsLength) +
-                        "\n\t\t\t\t\t\t\t"
-                    )
-                  ]
-                }
-              }
-            ])
-          })
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "content" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-7" }, [
-            _c("div", { staticClass: "numbers" }, [
-              _c("h6", [_vm._v("Employees")])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-fd90c5de", module.exports)
-  }
-}
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(true)
 		module.exports = factory();
@@ -67867,6 +63580,4484 @@ function install(Vue) {
 /******/ ])["default"];
 });
 //# sourceMappingURL=vuetify.js.map
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(42)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Sidebar\\faculty.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2fc9e486", Component.options)
+  } else {
+    hotAPI.reload("data-v-2fc9e486", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "sidebar-wrapper" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("ul", { staticClass: "nav" }, [
+      _c(
+        "li",
+        { attrs: { id: "employee" } },
+        [
+          _c("router-link", { attrs: { to: "/facultyprofile" } }, [
+            _c("i", { staticClass: "ti-user" }),
+            _vm._v(" "),
+            _c("p", [_vm._v("Profile")])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "li",
+        { attrs: { id: "employee" } },
+        [
+          _c("router-link", { attrs: { to: "/personaldatasheet" } }, [
+            _c("i", { staticClass: "ti-user" }),
+            _vm._v(" "),
+            _c("p", [_vm._v("Personal Data Sheet")])
+          ])
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo" }, [
+      _c("a", { staticClass: "simple-text", attrs: { href: "#" } }, [
+        _c("img", { attrs: { src: "images/csu.png", alt: "" } })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-2fc9e486", module.exports)
+  }
+}
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(44)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Sidebar\\adminsidebar.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-555dd324", Component.options)
+  } else {
+    hotAPI.reload("data-v-555dd324", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "sidebar-wrapper" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("ul", { staticClass: "nav" }, [
+      _c(
+        "li",
+        { attrs: { id: "employee" } },
+        [
+          _c("router-link", { attrs: { to: "/studentsadmin" } }, [
+            _c("i", { staticClass: "ti-user" }),
+            _vm._v(" "),
+            _c("p", [_vm._v("Students")])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "li",
+        { attrs: { id: "employee" } },
+        [
+          _c("router-link", { attrs: { to: "/employeesadmin" } }, [
+            _c("i", { staticClass: "ti-user" }),
+            _vm._v(" "),
+            _c("p", [_vm._v("Employees")])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "li",
+        { attrs: { id: "employee" } },
+        [
+          _c("router-link", { attrs: { to: "/collegesadmin" } }, [
+            _c("i", { staticClass: "ti-user" }),
+            _vm._v(" "),
+            _c("p", [_vm._v("Colleges")])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "li",
+        { attrs: { id: "employee" } },
+        [
+          _c("router-link", { attrs: { to: "/buildingsadmin" } }, [
+            _c("i", { staticClass: "ti-user" }),
+            _vm._v(" "),
+            _c("p", [_vm._v("Buildings")])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "li",
+        { attrs: { id: "employee" } },
+        [
+          _c("router-link", { attrs: { to: "/coursesadmin" } }, [
+            _c("i", { staticClass: "ti-user" }),
+            _vm._v(" "),
+            _c("p", [_vm._v("Courses")])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "li",
+        { attrs: { id: "employee" } },
+        [
+          _c("router-link", { attrs: { to: "/curriculumsadmin" } }, [
+            _c("i", { staticClass: "ti-user" }),
+            _vm._v(" "),
+            _c("p", [_vm._v("Curriculums")])
+          ])
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo" }, [
+      _c("a", { staticClass: "simple-text", attrs: { href: "#" } }, [
+        _c("img", { attrs: { src: "images/csu.png", alt: "" } })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-555dd324", module.exports)
+  }
+}
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(46)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\profile.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1f56158a", Component.options)
+  } else {
+    hotAPI.reload("data-v-1f56158a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-lg-4 col-md-5" }, [
+          _c("div", { staticClass: "card card-user" }, [
+            _c("div", { staticClass: "image" }, [
+              _c("img", {
+                attrs: { src: "assets/img/background.jpg", alt: "..." }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content" }, [
+              _c("div", { staticClass: "author" }, [
+                _c("img", {
+                  staticClass: "avatar border-white",
+                  attrs: { src: "assets/img/faces/face-2.jpg", alt: "..." }
+                }),
+                _vm._v(" "),
+                _c("h4", { staticClass: "title" }, [
+                  _vm._v("Chet Faker"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("small", [_vm._v("@chetfaker")])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "description text-center" }, [
+                _vm._v('\n\t\t\t\t\t\t"I like the way you work it '),
+                _c("br"),
+                _vm._v("\n\t\t\t\t\t\tNo diggity "),
+                _c("br"),
+                _vm._v('\n\t\t\t\t\t\tI wanna bag it up"\n\t\t\t\t\t')
+              ])
+            ]),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c("div", { staticClass: "text-center" }, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 col-md-offset-1" }, [
+                  _c("h5", [
+                    _vm._v("12"),
+                    _c("br"),
+                    _c("small", [_vm._v("Files")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-4" }, [
+                  _c("h5", [
+                    _vm._v("2GB"),
+                    _c("br"),
+                    _c("small", [_vm._v("Used")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3" }, [
+                  _c("h5", [
+                    _vm._v("24,6$"),
+                    _c("br"),
+                    _c("small", [_vm._v("Spent")])
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "header" }, [
+              _c("h4", { staticClass: "title" }, [_vm._v("Team Members")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content" }, [
+              _c("ul", { staticClass: "list-unstyled team-members" }, [
+                _c("li", [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-xs-3" }, [
+                      _c("div", { staticClass: "avatar" }, [
+                        _c("img", {
+                          staticClass:
+                            "img-circle img-no-padding img-responsive",
+                          attrs: {
+                            src: "assets/img/faces/face-0.jpg",
+                            alt: "Circle Image"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-xs-6" }, [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\t\tDJ Khaled\n\t\t\t\t\t\t\t\t\t"
+                      ),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text-muted" }, [
+                        _c("small", [_vm._v("Offline")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-xs-3 text-right" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-xs-3" }, [
+                      _c("div", { staticClass: "avatar" }, [
+                        _c("img", {
+                          staticClass:
+                            "img-circle img-no-padding img-responsive",
+                          attrs: {
+                            src: "assets/img/faces/face-1.jpg",
+                            alt: "Circle Image"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-xs-6" }, [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\t\tCreative Tim\n\t\t\t\t\t\t\t\t\t"
+                      ),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text-success" }, [
+                        _c("small", [_vm._v("Available")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-xs-3 text-right" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-xs-3" }, [
+                      _c("div", { staticClass: "avatar" }, [
+                        _c("img", {
+                          staticClass:
+                            "img-circle img-no-padding img-responsive",
+                          attrs: {
+                            src: "assets/img/faces/face-3.jpg",
+                            alt: "Circle Image"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-xs-6" }, [
+                      _vm._v("\n\t\t\t\t\t\t\t\t\tFlume\n\t\t\t\t\t\t\t\t\t"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "text-danger" }, [
+                        _c("small", [_vm._v("Busy")])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-8 col-md-7" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "header" }, [
+              _c("h4", { staticClass: "title" }, [_vm._v("Edit Profile")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content" }, [
+              _c("form", [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-5" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", [_vm._v("Company")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control border-input",
+                        attrs: {
+                          type: "text",
+                          disabled: "",
+                          placeholder: "Company",
+                          value: "Creative Code Inc."
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-3" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", [_vm._v("Username")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control border-input",
+                        attrs: {
+                          type: "text",
+                          placeholder: "Username",
+                          value: "michael23"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-4" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+                        _vm._v("Email address")
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control border-input",
+                        attrs: { type: "email", placeholder: "Email" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", [_vm._v("First Name")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control border-input",
+                        attrs: {
+                          type: "text",
+                          placeholder: "First Name",
+                          value: "Chet"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-6" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", [_vm._v("Last Name")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control border-input",
+                        attrs: {
+                          type: "text",
+                          placeholder: "Last Name",
+                          value: "Faker"
+                        }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", [_vm._v("Address")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control border-input",
+                        attrs: {
+                          type: "text",
+                          placeholder: "Home Address",
+                          value: "Melbourne, Australia"
+                        }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-4" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", [_vm._v("City")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control border-input",
+                        attrs: {
+                          type: "text",
+                          placeholder: "City",
+                          value: "Melbourne"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-4" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", [_vm._v("Country")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control border-input",
+                        attrs: {
+                          type: "text",
+                          placeholder: "Country",
+                          value: "Australia"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-4" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", [_vm._v("Postal Code")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control border-input",
+                        attrs: { type: "number", placeholder: "ZIP Code" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", [_vm._v("About Me")]),
+                      _vm._v(" "),
+                      _c(
+                        "textarea",
+                        {
+                          staticClass: "form-control border-input",
+                          attrs: {
+                            rows: "5",
+                            placeholder: "Here can be your description",
+                            value: "Mike"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "Oh so, your weak rhyme\n\t\t\t\t\t\t\t\t\t\tYou doubt I'll bother, reading into it\n\t\t\t\t\t\t\t\t\t\tI'll probably won't, left to my own devices\n\t\t\t\t\t\t\t\t\tBut that's the difference in our opinions."
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "clearfix" })
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1f56158a", module.exports)
+  }
+}
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(48)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\personaldatasheet.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-50634856", Component.options)
+  } else {
+    hotAPI.reload("data-v-50634856", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content" })
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-50634856", module.exports)
+  }
+}
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(50)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\cseligibility.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-87bf63be", Component.options)
+  } else {
+    hotAPI.reload("data-v-87bf63be", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card md-form" }, [
+            _c(
+              "div",
+              { staticClass: "tab-content" },
+              [
+                _c("router-view", {
+                  staticClass: "view two",
+                  attrs: { name: "pds", "keep-alive": "" }
+                })
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-87bf63be", module.exports)
+  }
+}
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(52)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\educationalbackground.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-219c5245", Component.options)
+  } else {
+    hotAPI.reload("data-v-219c5245", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card md-form" }, [
+            _c(
+              "div",
+              { staticClass: "tab-content" },
+              [
+                _c("router-view", {
+                  staticClass: "view two",
+                  attrs: { name: "pds", "keep-alive": "" }
+                })
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-219c5245", module.exports)
+  }
+}
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(54)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\familybackground.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7ba664be", Component.options)
+  } else {
+    hotAPI.reload("data-v-7ba664be", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card md-form" }, [
+            _c(
+              "div",
+              { staticClass: "tab-content" },
+              [
+                _c("router-view", {
+                  staticClass: "view two",
+                  attrs: { name: "pds", "keep-alive": "" }
+                })
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7ba664be", module.exports)
+  }
+}
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(56)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\learninganddevelopment.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-19d527ce", Component.options)
+  } else {
+    hotAPI.reload("data-v-19d527ce", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card md-form" }, [
+            _c(
+              "div",
+              { staticClass: "tab-content" },
+              [
+                _c("router-view", {
+                  staticClass: "view two",
+                  attrs: { name: "pds", "keep-alive": "" }
+                })
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-19d527ce", module.exports)
+  }
+}
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(58)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\otherinformation.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-d8798f70", Component.options)
+  } else {
+    hotAPI.reload("data-v-d8798f70", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card md-form" }, [
+            _c(
+              "div",
+              { staticClass: "tab-content" },
+              [
+                _c("router-view", {
+                  staticClass: "view two",
+                  attrs: { name: "pds", "keep-alive": "" }
+                })
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-d8798f70", module.exports)
+  }
+}
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(60)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\otherquestion.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6445990c", Component.options)
+  } else {
+    hotAPI.reload("data-v-6445990c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card md-form" }, [
+            _c(
+              "div",
+              { staticClass: "tab-content" },
+              [
+                _c("router-view", {
+                  staticClass: "view two",
+                  attrs: { name: "pds", "keep-alive": "" }
+                })
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6445990c", module.exports)
+  }
+}
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(62)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\reference.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-658ceb4f", Component.options)
+  } else {
+    hotAPI.reload("data-v-658ceb4f", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card md-form" }, [
+            _c(
+              "div",
+              { staticClass: "tab-content" },
+              [
+                _c("router-view", {
+                  staticClass: "view two",
+                  attrs: { name: "pds", "keep-alive": "" }
+                })
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-658ceb4f", module.exports)
+  }
+}
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(64)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\voluntarilywork.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-af9bec9c", Component.options)
+  } else {
+    hotAPI.reload("data-v-af9bec9c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card md-form" }, [
+            _c(
+              "div",
+              { staticClass: "tab-content" },
+              [
+                _c("router-view", {
+                  staticClass: "view two",
+                  attrs: { name: "pds", "keep-alive": "" }
+                })
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-af9bec9c", module.exports)
+  }
+}
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(66)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Faculty\\pds\\workexperience.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1933b8e7", Component.options)
+  } else {
+    hotAPI.reload("data-v-1933b8e7", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid " }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("div", { staticClass: "card md-form" }, [
+          _c("div", { staticClass: "tab-content " }, [
+            _c("ul", { staticClass: "nav nav-pills ", attrs: { id: "tabs" } }, [
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/personalinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tPersonal Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/familybackground" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tFamily Background\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/educationalbackground" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tEducational Background\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/cseligibility" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tCivil Service Eligibility\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "active" },
+                [
+                  _c("router-link", { attrs: { to: "/workexperience" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tWork Experience\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/voluntarilywork" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tVoluntarily Work\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c(
+                    "router-link",
+                    { attrs: { to: "/learninganddevelopment" } },
+                    [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\tLearning and Development\n\t\t\t\t\t\t\t"
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherinformation" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tOther Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/otherquestion" } }, [
+                    _vm._v("\n\t\t\t\t\t\t\t\tOther Question\n\t\t\t\t\t\t\t")
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                [
+                  _c("router-link", { attrs: { to: "/reference" } }, [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tReference and Other Information\n\t\t\t\t\t\t\t"
+                    )
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-12" }, [
+          _c("div", { staticClass: "card md-form" }, [
+            _c(
+              "div",
+              { staticClass: "tab-content" },
+              [
+                _c("router-view", {
+                  staticClass: "view two",
+                  attrs: { name: "pds", "keep-alive": "" }
+                })
+              ],
+              1
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#tab11", "data-toggle": "tab" } }, [
+        _vm._v("Export")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1933b8e7", module.exports)
+  }
+}
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(68)
+/* template */
+var __vue_template__ = __webpack_require__(69)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Admin\\students.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-21c1af88", Component.options)
+  } else {
+    hotAPI.reload("data-v-21c1af88", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			lists: {}
+		};
+	},
+	mounted: function mounted() {
+		var _this = this;
+
+		axios.get('/student').then(function (response) {
+			return _this.lists = response.data;
+		}).catch(function (error) {
+			return _this.errors = error.response.data.errors;
+		});
+	}
+});
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-10" }, [
+        _vm.lists.nopermission
+          ? _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "header" }, [
+                _vm.lists.nopermission
+                  ? _c("h1", [_vm._v(_vm._s(_vm.lists.nopermission))])
+                  : _vm._e()
+              ])
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        !_vm.lists.nopermission
+          ? _c("div", { staticClass: "card" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "content table-responsive table-full-width" },
+                [
+                  _c("table", { staticClass: "table is-hoverable" }, [
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _c(
+                      "tbody",
+                      _vm._l(_vm.lists, function(item, key) {
+                        return _c("tr", [
+                          _c("td", [
+                            _c("a", [
+                              _c("span", [
+                                _c("i", {
+                                  staticClass: "has-text-info fa fa-edit",
+                                  attrs: { "aria-hidden": "true" },
+                                  on: {
+                                    click: function($event) {
+                                      _vm.openUpdate(key)
+                                    }
+                                  }
+                                })
+                              ]),
+                              _vm._v(" "),
+                              _c("span", [
+                                _c("i", {
+                                  staticClass: "has-text-danger fa fa-trash",
+                                  attrs: { "aria-hidden": "true" },
+                                  on: {
+                                    click: function($event) {
+                                      _vm.del(key, item.course_id)
+                                    }
+                                  }
+                                })
+                              ])
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "td",
+                            {
+                              on: {
+                                click: function($event) {
+                                  _vm.openUpdate(key)
+                                }
+                              }
+                            },
+                            [_vm._v(_vm._s(item.StudentID))]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "td",
+                            {
+                              on: {
+                                click: function($event) {
+                                  _vm.openUpdate(key)
+                                }
+                              }
+                            },
+                            [_vm._v(_vm._s(item.CurriculumCode))]
+                          )
+                        ])
+                      })
+                    )
+                  ])
+                ]
+              )
+            ])
+          : _vm._e()
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "header" }, [
+      _c("h4", { staticClass: "title" }, [_vm._v("Students")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Action")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("StudentID")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Course")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-21c1af88", module.exports)
+  }
+}
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(71)
+/* template */
+var __vue_template__ = __webpack_require__(72)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Admin\\buildings.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-390df66a", Component.options)
+  } else {
+    hotAPI.reload("data-v-390df66a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      headers: [{ text: "Building Code", value: "BuildingCode" }, { text: "Building Title", value: "BuildingDescription" }],
+      lists: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get("/building").then(function (response) {
+      return _this.lists = response.data;
+    }).catch(function (error) {
+      return _this.errors = error.response.data.errors;
+    });
+  }
+});
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "app" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "v-app",
+        { attrs: { id: "inspire" } },
+        [
+          _c("v-data-table", {
+            attrs: { headers: _vm.headers, items: _vm.lists },
+            scopedSlots: _vm._u([
+              {
+                key: "items",
+                fn: function(props) {
+                  return [
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.BuildingCode))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.BuildingDescription))
+                    ])
+                  ]
+                }
+              }
+            ])
+          })
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-7" }, [
+            _c("div", { staticClass: "numbers" }, [
+              _c("h6", [_vm._v("Buildings")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-390df66a", module.exports)
+  }
+}
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(74)
+/* template */
+var __vue_template__ = __webpack_require__(75)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Admin\\colleges.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0b378260", Component.options)
+  } else {
+    hotAPI.reload("data-v-0b378260", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 74 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      headers: [{ text: "College Code", value: "CollegeCode" }, { text: "College Description", value: "FirstName" }, { text: "College Head", value: "PositionDescription" }],
+      lists: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get("/college").then(function (response) {
+      return _this.lists = response.data;
+    }).catch(function (error) {
+      return _this.errors = error.response.data.errors;
+    });
+  }
+});
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "app" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "v-app",
+        { attrs: { id: "inspire" } },
+        [
+          _c("v-data-table", {
+            attrs: { headers: _vm.headers, items: _vm.lists },
+            scopedSlots: _vm._u([
+              {
+                key: "items",
+                fn: function(props) {
+                  return [
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CollegeCode))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CollegeDescription))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CollegeHead))
+                    ])
+                  ]
+                }
+              },
+              {
+                key: "pageText",
+                fn: function(props) {
+                  return [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tShowing " +
+                        _vm._s(props.pageStart) +
+                        " - " +
+                        _vm._s(props.pageStop) +
+                        " of " +
+                        _vm._s(props.itemsLength) +
+                        "\n\t\t\t\t\t\t\t"
+                    )
+                  ]
+                }
+              }
+            ])
+          })
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-7" }, [
+            _c("div", { staticClass: "numbers" }, [
+              _c("h6", [_vm._v("Colleges")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0b378260", module.exports)
+  }
+}
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(77)
+/* template */
+var __vue_template__ = __webpack_require__(78)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Admin\\courses.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-beb36678", Component.options)
+  } else {
+    hotAPI.reload("data-v-beb36678", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 77 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      headers: [{ text: "Course Code", value: "CourseCode" }, { text: "Course Title", value: "CourseTitle" }, { text: "Major Code", value: "MajorCode" }, { text: "Major Description", value: "MajorDescription" }, { text: "College Code", value: "CollegeCode" }, { text: "College Description", value: "CollegeDescription" }],
+      lists: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get("/course").then(function (response) {
+      return _this.lists = response.data;
+    }).catch(function (error) {
+      return _this.errors = error.response.data.errors;
+    });
+  }
+});
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "app" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "v-app",
+        { attrs: { id: "inspire" } },
+        [
+          _c("v-data-table", {
+            attrs: { headers: _vm.headers, items: _vm.lists },
+            scopedSlots: _vm._u([
+              {
+                key: "items",
+                fn: function(props) {
+                  return [
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CourseCode))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CourseTitle))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.MajorCode))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.MajorDescription))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CollegeCode))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CollegeDescription))
+                    ])
+                  ]
+                }
+              },
+              {
+                key: "pageText",
+                fn: function(props) {
+                  return [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tShowing " +
+                        _vm._s(props.pageStart) +
+                        " - " +
+                        _vm._s(props.pageStop) +
+                        " of " +
+                        _vm._s(props.itemsLength) +
+                        "\n\t\t\t\t\t\t\t"
+                    )
+                  ]
+                }
+              }
+            ])
+          })
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-7" }, [
+            _c("div", { staticClass: "numbers" }, [
+              _c("h6", [_vm._v("Courses")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-beb36678", module.exports)
+  }
+}
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(80)
+/* template */
+var __vue_template__ = __webpack_require__(81)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Admin\\curriculums.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-261a6ab8", Component.options)
+  } else {
+    hotAPI.reload("data-v-261a6ab8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 80 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var Show = __webpack_require__(91);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: { Show: Show },
+  data: function data() {
+    return {
+      showActive: "",
+      headers: [{ text: "Action", value: "" }, { text: "Code", value: "CurriculumCode" }, { text: "Entry Year", value: "EntryYear" }, { text: "Course Title", value: "CourseTitle" }, { text: "College Description", value: "CollegeDescription" }, { text: "Major Description", value: "MajorDescription" }, { text: "Years", value: "NoOfYears" }, { text: "Education Level", value: "EducationLevel" }],
+      lists: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get("/curriculum").then(function (response) {
+      return _this.lists = response.data;
+    }).catch(function (error) {
+      return _this.errors = error.response.data.errors;
+    });
+  },
+
+  methods: {
+    openCurriculumInfo: function openCurriculumInfo(props) {
+      $("#myModal").modal("show");
+      console.log(props);
+      this.addActive = "is-active";
+    }
+  }
+});
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "app" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "v-app",
+        { attrs: { id: "inspire" } },
+        [
+          _c("v-data-table", {
+            attrs: { headers: _vm.headers, items: _vm.lists },
+            scopedSlots: _vm._u([
+              {
+                key: "items",
+                fn: function(props) {
+                  return [
+                    _c("td", [
+                      _c("a", [
+                        _c("span", [
+                          _c("i", {
+                            staticClass: "has-text-primary fa fa-list-ol",
+                            attrs: { "aria-hidden": "true" },
+                            on: {
+                              click: function($event) {
+                                _vm.openCurriculumInfo(props)
+                              }
+                            }
+                          })
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CurriculumCode))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.EntryYear))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CourseTitle))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.CollegeDescription))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.MajorDescription))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.NoOfYears))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.EducationLevel))
+                    ])
+                  ]
+                }
+              },
+              {
+                key: "pageText",
+                fn: function(props) {
+                  return [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tShowing " +
+                        _vm._s(props.pageStart) +
+                        " - " +
+                        _vm._s(props.pageStop) +
+                        " of " +
+                        _vm._s(props.itemsLength) +
+                        "\n\t\t\t\t\t\t\t"
+                    )
+                  ]
+                }
+              }
+            ])
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("Show", { attrs: { openmodal: _vm.showActive } })
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-7" }, [
+            _c("div", { staticClass: "numbers" }, [
+              _c("h6", [_vm._v("Curriculums")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-261a6ab8", module.exports)
+  }
+}
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(83)
+/* template */
+var __vue_template__ = __webpack_require__(84)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Admin\\employees.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-fd90c5de", Component.options)
+  } else {
+    hotAPI.reload("data-v-fd90c5de", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 83 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      headers: [{ text: "EmployeeID", value: "EmployeeID" }, { text: "Name", value: "FirstName" }, { text: "Position", value: "PositionDescription" }, { text: "Department", value: "DepartmentDescription" }, { text: "Status", value: "Status" }],
+      lists: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get("/employee").then(function (response) {
+      return _this.lists = response.data;
+    }).catch(function (error) {
+      return _this.errors = error.response.data.errors;
+    });
+  }
+});
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "app" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "v-app",
+        { attrs: { id: "inspire" } },
+        [
+          _c("v-data-table", {
+            attrs: { headers: _vm.headers, items: _vm.lists },
+            scopedSlots: _vm._u([
+              {
+                key: "items",
+                fn: function(props) {
+                  return [
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.EmployeeID))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(
+                        _vm._s(
+                          props.item.Salutation +
+                            " " +
+                            props.item.FirstName +
+                            " " +
+                            props.item.MiddleName +
+                            " " +
+                            props.item.LastName
+                        )
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.PositionDescription))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.DepartmentDescription))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "text-xs-left" }, [
+                      _vm._v(_vm._s(props.item.Status))
+                    ])
+                  ]
+                }
+              },
+              {
+                key: "pageText",
+                fn: function(props) {
+                  return [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t\tShowing " +
+                        _vm._s(props.pageStart) +
+                        " - " +
+                        _vm._s(props.pageStop) +
+                        " of " +
+                        _vm._s(props.itemsLength) +
+                        "\n\t\t\t\t\t\t\t"
+                    )
+                  ]
+                }
+              }
+            ])
+          })
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-7" }, [
+            _c("div", { staticClass: "numbers" }, [
+              _c("h6", [_vm._v("Employees")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-fd90c5de", module.exports)
+  }
+}
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(93)
+/* template */
+var __vue_template__ = __webpack_require__(92)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Admin\\CurriculumInfo.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-729364cd", Component.options)
+  } else {
+    hotAPI.reload("data-v-729364cd", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: { id: "myModal", role: "dialog", "data-backdrop": "false" }
+      },
+      [
+        _c("div", { staticClass: "modal-dialog" }, [
+          _c("div", { staticClass: "modal-content" }, [
+            _c("div", { staticClass: "modal-header" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "close",
+                  attrs: { type: "button", "data-dismiss": "modal" }
+                },
+                [_vm._v("×")]
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "modal-title" }, [_vm._v("Modal Header")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "modal-body" }, [
+              _c("p", [_vm._v("Some text in the modal.")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "modal-footer" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-default",
+                  attrs: { type: "button", "data-dismiss": "modal" }
+                },
+                [_vm._v("Close")]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-729364cd", module.exports)
+  }
+}
+
+/***/ }),
+/* 93 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      list: ""
+    };
+  },
+
+  methods: {
+    close: function close() {
+      this.$emit("closeRequest");
+    }
+  }
+});
 
 /***/ })
 /******/ ]);

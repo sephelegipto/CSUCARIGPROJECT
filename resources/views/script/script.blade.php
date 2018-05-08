@@ -21,6 +21,7 @@
 <script src="{{ asset('assets/js/demo.js') }}"></script>
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap-modal-fullscreen/1.0.3/bootstrap-modal-fullscreen.min.js"></script>
 <script type="text/javascript">
 	$.ajaxSetup({
 		headers: {
