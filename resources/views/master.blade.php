@@ -23,7 +23,8 @@
     <link href="{{ asset('assets/css/paper-dashboard.css')}} " rel="stylesheet" />
 
 
-
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="{{ asset('assets/css/demo.css') }}" rel="stylesheet" />
 
 
     <!--  Fonts and icons     -->
@@ -39,26 +40,24 @@
 
 <body>
 
-    <div id="app">
+    <div id="app" class="wrapper">
         <div class="sidebar" data-background-color="white" data-active-color="danger">
 
             @if (Auth::user()->UserTypeID === 1)
             <adminsidebar></adminsidebar>
-            @elseif (Auth::user()->UserTypeID === 2) @if ($CheckIfDean)
-            <deansidebar></deansidebar> @else
+            @elseif (Auth::user()->UserTypeID === 2)
             <facultysidebar></facultysidebar>
-            @endif @elseif (Auth::user()->UserTypeID === 3) @endif
+            @elseif (Auth::user()->UserTypeID === 3) @endif
 
 
         </div>
     @include('navigation.navigation')
 
 
-
         <router-view></router-view>
+    @include('footer.footer')
 
-
-
+    </div>
     </div>
 
 
