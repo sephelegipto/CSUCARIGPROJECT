@@ -16,14 +16,12 @@
 							:headers="headers"
 							:items="lists">
 	
-							<template slot="items" slot-scope="props" @click="openCurriculum(props)">
+							<template slot="items" slot-scope="props">
                 <td>  
-
-                    <a>
-                        <span>
-                          <i class="has-text-primary fa fa-list-ol" aria-hidden="true" @click="openCurriculumInfo(props)"></i>
+                  <router-link :to="{ path: '/curriculumsubject/' +  props.item.ID + '/'+ props.item.CourseTitle + '/'+ props.item.MajorDescription}"> <span>
+                          <i class="has-text-primary fa fa-list-ol" aria-hidden="true"></i>
                        </span>
-                   </a>
+                  </router-link>
                 </td>
 								<td class="text-xs-left">{{ props.item.CurriculumCode }}</td>
 								<td class="text-xs-left">{{ props.item.EntryYear }}</td>
@@ -45,9 +43,7 @@
      
 </template>
 <script>
-let Show = require("./CurriculumInfo.vue");
 export default {
-  components: { Show },
   data() {
     return {
       showActive: "",

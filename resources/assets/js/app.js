@@ -2,20 +2,23 @@
 
  window.Vue = require('vue');
 
- import Vue from 'vue'
+ import Vue from 'vue/dist/vue.min.js'
  import VueRouter from 'vue-router'
  import Vuetify from 'vuetify'
+ import BootstrapVue from 'bootstrap-vue'
+
 
 
  Vue.use(Vuetify)
  Vue.use(VueRouter)
-
+ Vue.use(BootstrapVue);
 
  //#######################################################################
  //############################ S I D E B A R ############################
  let facultysidebar = require('./components/Sidebar/faculty.vue')
  let adminsidebar = require('./components/Sidebar/adminsidebar.vue')
  let facultyprofile = require('./components/Faculty/profile.vue')
+ let deansidebar = require('./components/Sidebar/deansidebar.vue')
 
  //#######################################################################
  //############################### P D S #################################
@@ -37,12 +40,22 @@
  let coursesadmin = require('./components/Admin/courses.vue')
  let curriculumsadmin = require('./components/Admin/curriculums.vue')
  let employeesadmin = require('./components/Admin/employees.vue')
+ let curriculumsubjects = require('./components/Admin/CurriculumSubjects.vue')
+ //#######################################################################
+ //########################### F A C U L T Y ############################
+ let schedule = require('./components/Faculty/schedule.vue')
+
 
  //#######################################################################
  //########################## R O U T E S ################################
- const routes = [
-
-
+ const routes = [{
+ 		path: '/schedule',
+ 		component: schedule
+ 	},
+ 	{
+ 		path: '/curriculumsubject/:CurriculumCode/:CourseTitle/:MajorDescription',
+ 		component: curriculumsubjects
+ 	},
  	{
  		path: '/personaldatasheet',
  		component: personaldatasheet
@@ -140,6 +153,7 @@
  	router,
  	components: {
  		facultysidebar,
- 		adminsidebar
+ 		adminsidebar,
+ 		deansidebar
  	}
  });

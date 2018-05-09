@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
@@ -10,7 +11,7 @@ use App\tloginverificator;
 
 
 
-class LoginController extends Controller 
+class LoginController extends Controller
 {
 
   use AuthenticatesUsers;
@@ -22,37 +23,35 @@ class LoginController extends Controller
 
   public function getLogin()
   {
-    if (Auth::guard('web')->check())
-      {
-        return redirect()->route('dashboard');
-      }
-
-      return view('login');
+    if (Auth::guard('web')->check()) {
+      return redirect()->route('dashboard');
     }
 
-    public function index()
-    {
-      $user_id = Auth::user()->id;
-      return $user_id;
-    }
-    public function postLogin(Request $request)
-    {
-   
-     $password = md5(wordwrap($request->password , 1 , '-' , true ));
+    return view('login');
+  }
 
-     $user = tloginverificator::where('UserID', $request->username)
-     ->where('password', $password)
-     ->first();
-     if(empty($user)){
+  public function index()
+  {
+    $user_id = Auth::user()->id;
+    return $user_id;
+  }
+  public function postLogin(Request $request)
+  {
+
+    $password = md5(wordwrap($request->password, 1, '-', true));
+
+    $user = tloginverificator::where('UserID', $request->username)
+      ->where('password', $password)
+      ->first();
+    if (empty($user)) {
       return redirect()->route('/');
     }
 
-    $auth =  Auth::login($user);
-    
-    if ($auth)
-    {
+    $auth = Auth::login($user);
+
+    if ($auth) {
       return redirect()->route('curriculumlist');
-    } 
+    }
     return redirect()->route('/');
   }
 

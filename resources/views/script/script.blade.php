@@ -24,10 +24,10 @@
 <script src="https://cdn.jsdelivr.net/bootstrap-modal-fullscreen/1.0.3/bootstrap-modal-fullscreen.min.js"></script>
 <script type="text/javascript">
 	$.ajaxSetup({
-		headers: {
-			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-		}
-	});
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
 	function clean(obj) {
 		for (var propName in obj) { 
 			if (obj[propName] === null || obj[propName] === undefined) {
